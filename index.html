@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #minnuvinay:hover {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="background-image: url('fantasy-sky-sugar-cotton-pink-600nw-2482744475.webp'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;">
+    <div class="container" id="main-container">
+        <h1>Will you be my Valentine &#128525 ?</h1>
+        <a href="https://www.instagram.com/real_abhinay/"><h5 id="minnuvinay">                           ---  Abhinay 🎀</h5></a>
+        <div class="buttons">
+            <button class="yes-button" onclick="handleYesClick()">Yes</button>
+            <button class="no-button" onclick="handleNoClick()">No</button>
+        </div>
+        <div class="gif_container">
+            <img src="cute.gif" alt="Cute GIF" class="current-gif">
+        </div>
+    </div>
+    <div class="container" id="yes-container" style="display: none;">
+        <h1 class="header_text">Knew you would say yes &#128536 !</h1>
+        <br>
+        <br>
+        <div class="gif_container">
+            <img src="Atreus GIF by Santa Monica Studio.gif">
+            <img src="luvu.gif">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <h2>" You charge up my heart faster than a fast-charging USB-C cable. Happy Valentine's, my power source! "</h2>
+        <hr>
+        <!-- Add this audio element for the song that plays when "Yes" is clicked -->
+        <audio id="yesBackgroundSong" src="songs/bhl.mp3" loop></audio> <!-- Ensure the path to your new song file is correct -->
+    </div>
+    <!-- Add this audio element for the background song -->
+    <audio id="backgroundSong" src="songs/cha.mp3" loop></audio> <!-- Ensure the path to your song file is correct -->
+    <!-- Add this audio element for the new background song -->
+    <audio id="newBackgroundSong" src="songs/2.mp3" loop></audio> <!-- Ensure the path to your new song file is correct -->
+    <script src="script.js"></script>
+    <script>
+        function handleYesClick() {
+            window.location.href = "yes_page.html"; // Redirect to yes_page.html immediately
+        }
+    </script>
+</body>
+</html>
